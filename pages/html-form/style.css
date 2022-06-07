@@ -148,7 +148,6 @@ body {
     --error-collor: #e74c3c;
 }
 
-
 .banner {
     background-color: #1c78db;
     font-weight: bold;
@@ -165,6 +164,7 @@ body {
     width: 80%;
     margin: auto;
 }
+
 .form-wrap-filds {
     display: flex;
 }
@@ -212,15 +212,21 @@ body {
     visibility: visible;
 }
 
-
 .btn {
     width: 105px;
     padding: 10px;
     font-size: 14px;
     margin: 5px 0 10px 15px;
+    background-color: #7790ac;
+    color: #fff;
+    border-radius: 4px;
+    cursor: not-allowed;
+}
+
+.btn.enable {
     color: #fff;
     background-color: #2a66a8;
-    border-radius: 4px;
+    cursor: pointer;
 }
 
 .tbl-pessoas {
