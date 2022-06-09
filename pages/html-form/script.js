@@ -119,7 +119,10 @@ function addEventBtn() {
 function edite(e) {
   const tr = e.target.parentElement.parentElement.children;
   elemName.value = tr[0].innerHTML;
-  elemBirthDate.value = tr[1].innerHTML;
+  const dt = tr[1].innerHTML;
+  const dtformat = `${dt.slice(6, 10)}-${dt.slice(3, 5)}-${dt.slice(0, 2)}`;
+
+  elemBirthDate.value = dtformat;
 }
 
 elemName.onblur = () => {
