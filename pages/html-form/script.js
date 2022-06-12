@@ -109,10 +109,14 @@ function addBirth() {
 }
 
 function addEventBtn() {
-  const td = document.querySelectorAll("#btn-edite");
+  const elemBtnEdit = document.querySelectorAll("#btn-edite");
+  const elemBtnRemove = document.querySelectorAll("#btn-remove");
 
-  td.forEach((elem) => {
+  elemBtnEdit.forEach((elem) => {
     elem.addEventListener("click", edite);
+  });
+  elemBtnRemove.forEach((elem) => {
+    elem.addEventListener("click", remove);
   });
 }
 
@@ -121,13 +125,22 @@ function edite(e) {
   elemName.value = tr[0].innerHTML;
   const dt = tr[1].innerHTML;
   const dtformat = `${dt.slice(6, 10)}-${dt.slice(3, 5)}-${dt.slice(0, 2)}`;
-
   elemBirthDate.value = dtformat;
+  checkRequired([elemName, elemBirthDate]);
+  enableBtn([elemName, elemBirthDate]);
+
+  remove(e)
+}
+
+function remove(e) {
+  const elemTr = e.target.parentElement.parentElement;
+  elemTr.innerHTML = ''
+
 }
 
 elemName.onblur = () => {
   checkRequired([elemName, elemBirthDate]);
-  checkLength(elemName, 3, 10);
+  checkLength(elemName, 3, 70);
   enableBtn([elemName, elemBirthDate]);
 };
 elemBirthDate.onblur = () => {
@@ -140,7 +153,7 @@ elemForm.addEventListener("submit", function (e) {
 
   checkRequired([elemName, elemBirthDate]);
 
-  checkLength(elemName, 3, 10);
+  checkLength(elemName, 3, 70);
 
   addBirth();
 });
