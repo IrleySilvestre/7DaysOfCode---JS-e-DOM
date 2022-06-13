@@ -45,6 +45,15 @@ function enableBtn(inputArray) {
 
 function checkRequired(inputArr) {
   inputArr.forEach((elem) => {
+    if (elem.id === "birth-date") {
+      const data = new Date(elemBirthDate.value);
+      const dtNow = new Date();
+      if (data > dtNow) {
+        showError(elem, `Data deve ser menor que data atual!`);
+        return;
+      }
+    }
+
     if (elem.value.trim() === "") {
       showError(elem, ` Campo obrigtório`);
     } else {
@@ -129,13 +138,12 @@ function edite(e) {
   checkRequired([elemName, elemBirthDate]);
   enableBtn([elemName, elemBirthDate]);
 
-  remove(e)
+  remove(e);
 }
 
 function remove(e) {
   const elemTr = e.target.parentElement.parentElement;
-  elemTr.innerHTML = ''
-
+  elemTr.innerHTML = "";
 }
 
 elemName.onblur = () => {
