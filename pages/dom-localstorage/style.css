@@ -118,6 +118,10 @@
     height: 400px;
 }
 
+.container-seat.inative {
+    display: none;
+}
+
 .container-seat div {
     background-color: #444451;
     font-size: 9px;

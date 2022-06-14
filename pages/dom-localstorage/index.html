@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,101 +12,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="../icons8-myspace.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
     <title>Dom & LocalStorage</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="link-home">
-        <a href="../../index.html">Home</a>
-      </div>
+        <div class="link-home">
+            <a href="../../index.html">Home</a>
+        </div>
     </header>
 
     <main class="container">
-      <div class="container_room">
-        <div class="container_room_form">
-          <label for="selectMovie"> Selecione um Filme: </label>
-          <select class="listMovie" id="selectMovie">
-            <option value=""></option>
-            <option value="25">Jurassic World: Domínio - R$25,00</option>
-            <option value="30">
-              Doutor Estranho no Multiverso da Loucura - R$30,00
-            </option>
-            <option value="15">Top Gun: Maverick - R$15,00</option>
-            <option value="20">Assassino Sem Rastro - R$20,00</option>
-          </select>
+        <div class="container_room">
+            <div class="container_room_form">
+                <label for="selectMovie"> Selecione um Filme: </label>
+                <select class="listMovie" id="selectMovie">
+                              <option value=""></option>
+                              <option value="25">
+                                   Jurassic World: Domínio - R$25,00
+                              </option>
+                              <option value="30">
+                                   Doutor Estranho no Multiverso da Loucura -
+                                   R$30,00
+                              </option>
+                              <option value="15">
+                                   Top Gun: Maverick - R$15,00
+                              </option>
+                              <option value="20">
+                                   Assassino Sem Rastro - R$20,00
+                              </option>
+                         </select>
+            </div>
+            <div class="legends">
+                <div class="seatFree"></div>
+                <small>Disponiveis</small>
+                <div class="seatSelect"></div>
+                <small>Selecionado</small>
+                <div class="seatOccupied"></div>
+                <small>Ocupado</small>
+            </div>
+            <div class="container_room__screen"></div>
+            <div id="listSeat" class="container-seat inative">
+                <div id="seat" class="seatFree">A1</div>
+                <div id="seat" class="seatFree">A2</div>
+                <div id="seat" class="seatFree">A3</div>
+                <div id="seat" class="seatFree">A4</div>
+                <div id="seat" class="seatFree">A5</div>
+                <div id="seat" class="seatFree">A6</div>
+                <div id="seat" class="seatFree">A7</div>
+                <div id="seat" class="seatFree">A8</div>
+                <div id="seat" class="seatFree">B1</div>
+                <div id="seat" class="seatFree">B2</div>
+                <div id="seat" class="seatFree">B3</div>
+                <div id="seat" class="seatFree">B4</div>
+                <div id="seat" class="seatFree">B5</div>
+                <div id="seat" class="seatFree">B6</div>
+                <div id="seat" class="seatFree">B7</div>
+                <div id="seat" class="seatFree">B8</div>
+                <div id="seat" class="seatFree">C1</div>
+                <div id="seat" class="seatFree">C2</div>
+                <div id="seat" class="seatFree">C3</div>
+                <div id="seat" class="seatFree">C4</div>
+                <div id="seat" class="seatFree">C5</div>
+                <div id="seat" class="seatFree">C6</div>
+                <div id="seat" class="seatFree">C7</div>
+                <div id="seat" class="seatFree">C8</div>
+                <div id="seat" class="seatFree">D1</div>
+                <div id="seat" class="seatFree">D2</div>
+                <div id="seat" class="seatFree">D3</div>
+                <div id="seat" class="seatFree">D4</div>
+                <div id="seat" class="seatFree">D5</div>
+                <div id="seat" class="seatFree">D6</div>
+                <div id="seat" class="seatFree">D7</div>
+                <div id="seat" class="seatFree">D8</div>
+                <div id="seat" class="seatFree">E1</div>
+                <div id="seat" class="seatFree">E2</div>
+                <div id="seat" class="seatFree">E3</div>
+                <div id="seat" class="seatFree">E4</div>
+                <div id="seat" class="seatFree">E5</div>
+                <div id="seat" class="seatFree">E6</div>
+                <div id="seat" class="seatFree">E7</div>
+                <div id="seat" class="seatFree">E8</div>
+                <div id="seat" class="seatFree">F1</div>
+                <div id="seat" class="seatFree">F2</div>
+                <div id="seat" class="seatFree">F3</div>
+                <div id="seat" class="seatFree">F4</div>
+                <div id="seat" class="seatFree">F5</div>
+                <div id="seat" class="seatOccupied">F6</div>
+                <div id="seat" class="seatOccupied">F7</div>
+                <div id="seat" class="seatOccupied">F8</div>
+            </div>
+            <div class="container_room__car">
+                <p id="nameMovie">Filme Selecionado:</p>
+                <p id="sumTicket">Total de Ingressos:</p>
+                <p id="listSeatSelected">Assentos:</p>
+                <p id="sumPurchase">Total Compra:</p>
+            </div>
         </div>
-        <div class="legends">
-          <div class="seatFree"></div>
-          <small>Disponiveis</small>
-          <div class="seatSelect"></div>
-          <small>Selecionado</small>
-          <div class="seatOccupied"></div>
-          <small>Ocupado</small>
-        </div>
-        <div class="container_room__screen"></div>
-        <div id="listSeat" class="container-seat">
-          <div id="seat" class="seatFree">A1</div>
-          <div id="seat" class="seatFree">A2</div>
-          <div id="seat" class="seatFree">A3</div>
-          <div id="seat" class="seatFree">A4</div>
-          <div id="seat" class="seatFree">A5</div>
-          <div id="seat" class="seatFree">A6</div>
-          <div id="seat" class="seatFree">A7</div>
-          <div id="seat" class="seatFree">A8</div>
-          <div id="seat" class="seatFree">B1</div>
-          <div id="seat" class="seatFree">B2</div>
-          <div id="seat" class="seatFree">B3</div>
-          <div id="seat" class="seatFree">B4</div>
-          <div id="seat" class="seatFree">B5</div>
-          <div id="seat" class="seatFree">B6</div>
-          <div id="seat" class="seatFree">B7</div>
-          <div id="seat" class="seatFree">B8</div>
-          <div id="seat" class="seatFree">C1</div>
-          <div id="seat" class="seatFree">C2</div>
-          <div id="seat" class="seatFree">C3</div>
-          <div id="seat" class="seatFree">C4</div>
-          <div id="seat" class="seatFree">C5</div>
-          <div id="seat" class="seatFree">C6</div>
-          <div id="seat" class="seatFree">C7</div>
-          <div id="seat" class="seatFree">C8</div>
-          <div id="seat" class="seatFree">D1</div>
-          <div id="seat" class="seatFree">D2</div>
-          <div id="seat" class="seatFree">D3</div>
-          <div id="seat" class="seatFree">D4</div>
-          <div id="seat" class="seatFree">D5</div>
-          <div id="seat" class="seatFree">D6</div>
-          <div id="seat" class="seatFree">D7</div>
-          <div id="seat" class="seatFree">D8</div>
-          <div id="seat" class="seatFree">E1</div>
-          <div id="seat" class="seatFree">E2</div>
-          <div id="seat" class="seatFree">E3</div>
-          <div id="seat" class="seatFree">E4</div>
-          <div id="seat" class="seatFree">E5</div>
-          <div id="seat" class="seatFree">E6</div>
-          <div id="seat" class="seatFree">E7</div>
-          <div id="seat" class="seatFree">E8</div>
-          <div id="seat" class="seatFree">F1</div>
-          <div id="seat" class="seatFree">F2</div>
-          <div id="seat" class="seatFree">F3</div>
-          <div id="seat" class="seatFree">F4</div>
-          <div id="seat" class="seatFree">F5</div>
-          <div id="seat" class="seatOccupied">F6</div>
-          <div id="seat" class="seatOccupied">F7</div>
-          <div id="seat" class="seatOccupied">F8</div>
-        </div>
-        <div class="container_room__car">
-          <p id="sumTicket">Total de Ingressos:</p>
-          <p id="listSeatSelected">Assentos:</p>
-          <p id="sumPurchase">Total Compra:</p>
-        </div>
-      </div>
     </main>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
