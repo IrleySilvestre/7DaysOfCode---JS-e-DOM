@@ -37,15 +37,15 @@
     flex-direction: column;
     justify-content: center;
     width: 550px;
-    height: 450px;
+    height: 550px;
 }
 
 .container_room__screen {
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 250px;
-    height: 75px;
+    width: 300px;
+    height: 150px;
     background: #fff;
     box-shadow: 0 2px 10px rgb(222, 214, 214);
 }
@@ -59,6 +59,13 @@
 .container_room_form label {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.listMovie {
+    height: 30px;
+    font-weight: bold;
+    padding: 4px;
 }
 
 .container_room__car {
@@ -66,4 +73,76 @@
     width: 500px;
     text-align: left;
     padding: 10px;
+}
+
+.container_room__car p {
+    padding: 5px;
+}
+
+.legends {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.legends div {
+    height: 17px;
+    width: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.legends div.seatFree {
+    background-color: #5582c8;
+}
+
+.legends div.seatSelect {
+    background-color: #2ecc71;
+}
+
+.legends div.seatOccupied {
+    background-color: #e74c3c;
+}
+
+.legends small {
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+.container-seat {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    width: 300px;
+    height: 400px;
+}
+
+.container-seat div {
+    background-color: #444451;
+    font-size: 9px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px 0 7px;
+    height: 17px;
+    width: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container-seat div.seatFree {
+    background-color: #5582c8;
+    cursor: pointer;
+}
+
+.container-seat div.seatSelect {
+    background-color: #2ecc71;
+    cursor: pointer;
+    ;
+}
+
+.container-seat div.seatOccupied {
+    background-color: #e74c3c;
 }
