@@ -150,3 +150,14 @@
 .container-seat div.seatOccupied {
     background-color: #e74c3c;
 }
+
+.btn-save {
+    width: 100%;
+    text-align: left;
+}
+
+.btn-save button {
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 5px;
+}
