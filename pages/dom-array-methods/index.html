@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" type="image/x-icon" href="../icons8-myspace.png" />
-    <!-- <link rel="stylesheet" href="../reset.css" /> -->
     <link rel="stylesheet" href="style.css" />
-    <title>Exchange Rate Calculator</title>
+    <title>Dom Array and Methods</title>
   </head>
   <body>
     <header>
@@ -19,24 +18,20 @@
         <a href="../../index.html">Home</a>
       </div>
     </header>
-    <img class="money-img" src="icons-currency.png" />
-    <h1>Coversor de Moedas</h1>
-    <p>Escolha uma moeda para fazer a converção</p>
+    <h1>Dom - Array - Methodes (Map, Reduce, Filter)</h1>
     <div class="container">
-      <div class="currency">
-        <select name="currence" id="currency-one"></select>
-        <input type="number" id="amount-one" placeholder="0" value="1" />
-      </div>
-      <div class="swap">
-        <button class="btn" onclick="invert()">Inverter</button>
-        <div class="rate" id="rate"></div>
-      </div>
-
-      <div class="currency">
-        <select name="currence" id="currency-two"></select>
-        <input type="number" id="amount-two" placeholder="0" />
-      </div>
+      <aside>
+        <button id="add-user">Adicionar Pessoar 👱‍♂️</button>
+        <button id="double">Dobrar Patrimonio 💰</button>
+        <button id="show-millionaires">Filtrar Milhonários 💵</button>
+        <button id="sort">Ordenar por patrimonio ↓</button>
+        <button id="calculate-wealth">Somar patrimonios 🧮</button>
+      </aside>
+      <main id="main">
+        <h2><strong>Nome</strong> Patrimonio</h2>
+      </main>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

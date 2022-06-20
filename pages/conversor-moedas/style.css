@@ -23,6 +23,26 @@ h1 {
 
 p {
     text-align: center;
+    font-weight: bold;
+}
+
+.link-home {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.link-home a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn {
@@ -50,6 +70,7 @@ p {
     border: 1px solid #dedede;
     cursor: pointer;
     font-size: 16px;
+    appearance: none;
 }
 
 .currency input {
@@ -69,6 +90,11 @@ p {
     color: var(--primary-color);
     font-size: 14px;
     padding: 0 10px;
+}
+
+.swap {
+    display: flex;
+    align-items: center;
 }
 
 select:focus,
