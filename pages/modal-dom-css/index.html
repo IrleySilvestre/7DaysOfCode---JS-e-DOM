@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../icons8-myspace.png" />
+    <link
+      rel="stylesheet"
+      href="./font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal Dom CSS</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="user" />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Nossa História</a></li>
+        <li><a href="#">Localização</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars"></i>
+      </button>
+      <h1>Landing Page</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <button id="btn-signup" class="btn-signup">Sign Up</button>
+    </header>
+
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero
+        repudiandae voluptate optio aperiam in, laudantium, est nam officia
+        quasi sapiente fugit rerum voluptatum quisquam ullam saepe
+        exercitationem odio cumque.
+      </p>
+      <h2>Serviços</h2>
+      <ul>
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+        <li>Service 4</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+        perferendis quaerat ex libero blanditiis iure ipsa voluptates, tempora
+        tenetur? Accusamus sunt libero eius totam eum fugit! Quod obcaecati unde
+        dolorem.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+        ducimus pariatur accusantium odio natus non fuga, dolores voluptates
+        necessitatibus distinctio nostrum. Amet, reprehenderit voluptates
+        doloribus dignissimos corporis dicta dolores culpa?
+      </p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button id="btn-close" class="btn-close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Nome"
+                class="form-input"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Email"
+                class="form-input"
+              />
+            </div>
+
+            <div>
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                id="poassword"
+                placeholder="Senha"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label for="password2">Confirmação da Senha</label>
+              <input
+                type="password2"
+                id="poassword2"
+                placeholder="Senha"
+                class="form-input"
+              />
+            </div>
+            <input type="submit" value="Submit" class="btn-submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
